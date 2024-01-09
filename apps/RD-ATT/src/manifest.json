@@ -1,0 +1,21 @@
+{
+  "name": "RDATT",
+  "appid": "wx8b70a679db801527",
+  "description": "RD研发管理系统",
+  "versionName": "2.0.0",
+  "versionCode": "100",
+  "transformPx": false,
+  "mp-weixin": {
+    "appid": "wx8b70a679db801527",
+    "mergeVirtualHostAttributes": true,
+    "setting": {
+      "urlCheck": false
+    },
+    "libVersion": "widelyUsed",
+    "usingComponents": true
+  },
+  "uniStatistics": {
+    "enable": false
+  },
+  "vueVersion": "3"
+}

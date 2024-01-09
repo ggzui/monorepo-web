@@ -1,0 +1,17 @@
+{
+  "name": "@ys/ts-config",
+  "version": "1.0.0",
+  "private": true,
+  "files": [
+    "base.json",
+    "node.json",
+    "app.json"
+  ],
+  "scripts": {
+    "clean": "rimraf node_modules"
+  },
+  "dependencies": {
+    "@types/node": "*",
+    "vite": "^5.0.11"
+  }
+}

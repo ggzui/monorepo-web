@@ -1,0 +1,30 @@
+@import '@dcloudio/uni-ui/lib/uni-scss/variables.scss';
+@import '@climblee/uv-ui/theme.scss';
+
+$uv-main-color: $uni-main-color;
+$uv-content-color: $uni-base-color;
+$uv-tips-color: $uni-secondary-color;
+$uv-light-color: $uni-extra-color;
+$uv-border-color: $uni-border-3;
+$uv-bg-color: $uni-bg-color;
+$uv-disabled-color: $uni-extra-color;
+
+$uv-primary: $uni-primary;
+$uv-primary-disabled: $uni-primary-disable;
+$uv-primary-light: $uni-primary-light;
+
+$uv-success: $uni-success;
+$uv-success-disabled: $uni-success-disable;
+$uv-success-light: $uni-success-light;
+
+$uv-warning: $uni-warning;
+$uv-warning-disabled: $uni-warning-disable;
+$uv-warning-light: $uni-warning-light;
+
+$uv-error: $uni-error;
+$uv-error-disabled: $uni-error-disable;
+$uv-error-light: $uni-error-light;
+
+$uv-info: $uni-info;
+$uv-info-disabled: $uni-info-disable;
+$uv-info-light: $uni-info-light;

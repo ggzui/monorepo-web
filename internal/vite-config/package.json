@@ -1,0 +1,29 @@
+{
+  "name": "@ys/vite-config",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf .turbo node_modules dist",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@dcloudio/vite-plugin-uni": "3.0.0-3081220230817001",
+    "@vitejs/plugin-vue": "^5.0.2",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "unocss": "^0.58.3",
+    "vite": "^5.0.11"
+  }
+}

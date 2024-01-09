@@ -1,0 +1,38 @@
+{
+  "private": true,
+  "scripts": {
+    "bootstrap": "pnpm install",
+    "build": "turbo build",
+    "clean": "turbo clean",
+    "dev": "turbo dev",
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "turbo stub",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.json --max-warnings 0 --cache --fix",
+    "type:check": "turbo type:check"
+  },
+  "devDependencies": {
+    "@iconify/json": "^2.2.166",
+    "@types/node": "*",
+    "@unocss/transformer-directives": "^0.58.3",
+    "@vue/runtime-core": "^3.4.6",
+    "@ys/eslint-config": "workspace:*",
+    "@ys/prettier-config": "workspace:*",
+    "@ys/ts-config": "workspace:*",
+    "@ys/typings": "workspace:*",
+    "@ys/vite-config": "workspace:*",
+    "rimraf": "^5.0.5",
+    "sass": "^1.69.7",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
+    "unocss": "^0.58.3",
+    "vite": "^5.0.11",
+    "vue": "^3.4.6",
+    "vue-tsc": "^1.8.27"
+  },
+  "packageManager": "pnpm@8.14.0",
+  "engines": {
+    "node": ">= 16",
+    "pnpm": ">= 8"
+  }
+}

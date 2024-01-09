@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Application Config",
+  "extends": "./base.json",
+  "compilerOptions": {
+    "useDefineForClassFields": true,
+    "jsx": "preserve",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "noImplicitAny": false,
+    "moduleResolution": "bundler",
+    "types": ["vite/client", "@ys/typings/global"]
+  }
+}
