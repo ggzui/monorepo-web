@@ -14,7 +14,7 @@
 
         <uni-grid :column="4" :highlight="true" :show-border="false">
           <uni-grid-item v-for="(item, index) in wrap.children" :key="item.path" :index="index">
-            <view class="flex-1 flex-col flex-center gap-y-1">
+            <view class="flex-center flex-1 flex-col gap-y-1">
               <text :class="item.icon" class="text-32px" />
               <text>{{ item.title }}</text>
             </view>

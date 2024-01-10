@@ -3,7 +3,7 @@ export default {
   printWidth: 120,
   singleQuote: true,
   trailingComma: 'none',
-  plugins: ['prettier-plugin-packagejson'],
+  plugins: ['prettier-plugin-tailwindcss'],
   overrides: [
     {
       files: '.*rc',

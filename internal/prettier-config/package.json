@@ -2,6 +2,11 @@
   "name": "@ys/prettier-config",
   "version": "1.0.0",
   "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -9,18 +14,13 @@
       "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "clean": "rimraf .turbo node_modules dist",
-    "stub": "unbuild --stub"
+    "stub": "unbuild --stub",
+    "clean": "rimraf .turbo node_modules dist"
   },
   "dependencies": {
     "prettier": "^3.1.1",
-    "prettier-plugin-packagejson": "^2.4.9"
+    "prettier-plugin-tailwindcss": "^0.5.11"
   }
 }

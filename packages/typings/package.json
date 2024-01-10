@@ -2,6 +2,11 @@
   "name": "@ys/typings",
   "version": "1.0.0",
   "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -12,17 +17,7 @@
       "default": "./dist/global.mjs"
     }
   },
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "unbuild",
-    "clean": "rimraf .turbo node_modules dist",
-    "stub": "unbuild --stub"
-  },
   "publishConfig": {
     "exports": {
       ".": {
@@ -30,5 +25,10 @@
         "default": "./dist/index.mjs"
       }
     }
+  },
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "clean": "rimraf .turbo node_modules dist"
   }
 }

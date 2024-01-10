@@ -2,6 +2,11 @@
   "name": "@ys/vite-config",
   "version": "1.0.0",
   "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -9,15 +14,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "clean": "rimraf .turbo node_modules dist",
-    "stub": "unbuild --stub"
+    "stub": "unbuild --stub",
+    "clean": "rimraf .turbo node_modules dist"
   },
   "dependencies": {
     "@dcloudio/vite-plugin-uni": "3.0.0-3081220230817001",

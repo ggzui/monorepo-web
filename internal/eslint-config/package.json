@@ -2,6 +2,11 @@
   "name": "@ys/eslint-config",
   "version": "1.0.0",
   "private": true,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -9,16 +14,10 @@
       "require": "./dist/index.cjs"
     }
   },
-  "main": "./dist/index.cjs",
-  "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
-    "clean": "rimraf .turbo node_modules dist",
-    "lint": "eslint ./src --ext .ts,.json --max-warnings 0 --cache --fix",
-    "stub": "unbuild --stub"
+    "stub": "unbuild --stub",
+    "clean": "rimraf .turbo node_modules dist"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.18.1",
